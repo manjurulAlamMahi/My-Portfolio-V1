@@ -464,12 +464,18 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
    PROJECTS (full-width stacked rows)
    ========================================================================== */
 .projects { background: var(--bg); }
+
+/* vertical list of full-width project rows — each sticks a little lower than
+   the last, so as you scroll, cards pile up behind one another. */
 .projects__list {
   display: flex;
   flex-direction: column;
-  gap: 34px;
+  --stack-top: clamp(100px, 14vh, 140px);
 }
 .project-row {
+  position: sticky;
+  top: var(--stack-top);
+  margin-bottom: clamp(1.5rem, 10vh, 6rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
@@ -478,11 +484,18 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 30px;
-  transition: var(--transition);
+  transition: transform 0.5s cubic-bezier(.16,1,.3,1), box-shadow 0.4s ease, border-color 0.4s ease;
 }
+.project-row:nth-child(2) { top: calc(var(--stack-top) + 14px); }
+.project-row:nth-child(3) { top: calc(var(--stack-top) + 28px); }
+.project-row:nth-child(4) { top: calc(var(--stack-top) + 42px); }
+.project-row:nth-child(5) { top: calc(var(--stack-top) + 56px); }
+.project-row:nth-child(6) { top: calc(var(--stack-top) + 70px); }
+.project-row:last-child { margin-bottom: 0; }
 .project-row:hover {
+  transform: translateY(-6px);
   border-color: var(--hover);
-  box-shadow: 0 20px 40px rgba(48,56,43,0.08);
+  box-shadow: 0 24px 50px rgba(48,56,43,0.14);
 }
 .project-row__thumb {
   aspect-ratio: 16 / 10;
@@ -494,9 +507,11 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
 .project-row__thumb img {
   width: 100%; height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transform: scale(1.08);
+  transition: transform 1.2s cubic-bezier(.16,1,.3,1);
 }
-.project-row:hover .project-row__thumb img { transform: scale(1.05); }
+.project-row.active .project-row__thumb img { transform: scale(1); }
+.project-row:hover .project-row__thumb img { transform: scale(1.05); transition: transform 0.5s ease; }
 
 .project-row__body h3 {
   font-family: var(--font-heading);
@@ -724,7 +739,13 @@ button { font: inherit; cursor: pointer; border: none; background: none; }
   .services__grid { grid-template-columns: repeat(2, 1fr); }
   .skills__grid, .timeline-grid { grid-template-columns: 1fr; gap: 50px; }
   .contact__grid { grid-template-columns: repeat(2, 1fr); }
-  .project-row { grid-template-columns: 1fr; gap: 26px; }
+  .projects__list { gap: 26px; }
+  .project-row {
+    position: static;
+    grid-template-columns: 1fr;
+    gap: 26px;
+    margin-bottom: 0;
+  }
   .skill-icon-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
