@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manjurul Alam Mahi | Laravel Backend Developer</title>
+<meta name="description" content="Portfolio of Manjurul Alam Mahi — Laravel Backend Developer building scalable APIs and web applications.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ CURSOR GLOW (optional subtle effect) ============ -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner container">
+    <a href="#home" class="navbar__logo">
+      <span class="logo-bracket">&lt;</span>Mahi<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="navbar__nav" id="navMenu">
+      <a href="#home" class="nav-link active" data-link>Home</a>
+      <a href="#about" class="nav-link" data-link>About</a>
+      <a href="#services" class="nav-link" data-link>Services</a>
+      <a href="#projects" class="nav-link" data-link>Projects</a>
+      <a href="#skills" class="nav-link" data-link>Skills</a>
+      <a href="#experience" class="nav-link" data-link>Experience</a>
+      <a href="#contact" class="nav-link" data-link>Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--sm navbar__cta">Hire Me</a>
+
+    <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="hero__floating-code" id="floatingCode"></div>
+
+  <div class="hero__content">
+    <p class="hero__eyebrow reveal">Hi, my name is</p>
+    <h1 class="hero__typed-name">
+      <span id="typedName" class="typed-name__code"></span><span class="typed-cursor">|</span>
+    </h1>
+    <p class="hero__role reveal" data-delay="1">Laravel Backend Developer &mdash; APIs, POS &amp; Scalable Web Apps</p>
+
+    <div class="hero__actions reveal" data-delay="2">
+      <a href="#projects" class="btn btn--primary">View Projects</a>
+      <a href="#contact" class="btn btn--ghost">Contact Me</a>
+    </div>
+  </div>
+
+  <a href="#about" class="hero__scroll-indicator" aria-label="Scroll down">
+    <span class="mouse"><span class="wheel"></span></span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about section">
+  <div class="container about__grid">
+
+    <div class="about__media reveal">
+      <div class="about__avatar-wrap">
+        <div class="about__avatar-ring"></div>
+        <img src="assets/images/avatar-placeholder.svg" alt="Manjurul Alam Mahi" class="about__avatar" id="avatarImg">
+        <!-- Replace assets/images/avatar-placeholder.svg with your real photo (e.g. assets/images/avatar.jpg) -->
+        <div class="about__badge" id="techBadge">
+          <i class="devicon-laravel-plain"></i>
+          <span>Laravel</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__content">
+      <p class="section-eyebrow reveal">Get To Know Me</p>
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="about__text reveal" data-delay="1">
+        Laravel Developer with 2+ years of experience building scalable web applications and RESTful APIs.
+        Skilled in PHP and Vue 2, with hands-on experience in POS systems. Proven team leader with experience
+        managing development teams and delivering reliable, high-performance solutions.
+      </p>
+      <p class="about__text reveal" data-delay="2">
+        Currently building scalable APIs and web-based control panels for mobile and web applications at
+        <strong>Softvence Agency</strong>, collaborating with Flutter and React teams while leading a
+        20+ member capsule team across UI/UX, frontend, backend, and mobile development.
+      </p>
+
+      <div class="about__stats reveal" data-delay="3">
+        <div class="stat">
+          <span class="stat__num" data-count="2">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="10">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Projects Delivered</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num" data-count="20">0</span><span class="stat__plus">+</span>
+          <span class="stat__label">Team Members Led</span>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn--primary reveal" data-delay="4">Let's Talk</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="services section">
+  <div class="container">
+    <p class="section-eyebrow reveal center">What I Offer</p>
+    <h2 class="section-title reveal center">Services</h2>
+
+    <div class="services__grid">
+      <div class="service-card reveal" data-delay="0">
+        <div class="service-card__icon"><i class="fa-solid fa-server"></i></div>
+        <h3>Backend API Development</h3>
+        <p>Building secure, scalable RESTful APIs in Laravel &amp; PHP that power web and mobile applications.</p>
+      </div>
+      <div class="service-card reveal" data-delay="1">
+        <div class="service-card__icon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <h3>eCommerce &amp; POS Systems</h3>
+        <p>End-to-end eCommerce platforms and Point of Sale systems built with Laravel and Vue 2.</p>
+      </div>
+      <div class="service-card reveal" data-delay="2">
+        <div class="service-card__icon"><i class="fa-solid fa-window-restore"></i></div>
+        <h3>Web Application Development</h3>
+        <p>Full-stack Laravel Blade web apps, admin panels and control-panel dashboards.</p>
+      </div>
+      <div class="service-card reveal" data-delay="3">
+        <div class="service-card__icon"><i class="fa-solid fa-database"></i></div>
+        <h3>Database Design</h3>
+        <p>Efficient MySQL schema design, query optimization and performance tuning.</p>
+      </div>
+      <div class="service-card reveal" data-delay="4">
+        <div class="service-card__icon"><i class="fa-solid fa-plug"></i></div>
+        <h3>Third-Party Integrations</h3>
+        <p>Stripe, Firebase, SSLCommerz, Google/Apple Auth and real-time notifications.</p>
+      </div>
+      <div class="service-card reveal" data-delay="5">
+        <div class="service-card__icon"><i class="fa-solid fa-users-gear"></i></div>
+        <h3>Team Leading &amp; PM</h3>
+        <p>Leading development teams, client communication and end-to-end project delivery.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="projects">
+  <div class="projects__intro container">
+    <p class="section-eyebrow reveal center">My Work</p>
+    <h2 class="section-title reveal center">Projects</h2>
+    <p class="projects__hint reveal center">Keep scrolling — each project reveals one at a time.</p>
+  </div>
+
+  <div class="projects__scroll" id="projectsScroll">
+    <div class="projects__sticky">
+
+      <div class="projects__progress" id="projectsProgress">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+        <span class="dot" data-index="4"></span>
+        <span class="dot" data-index="5"></span>
+      </div>
+
+      <div class="project-panels">
+
+        <article class="project-panel active" data-index="0">
+          <div class="project-panel__num">01</div>
+          <div class="project-panel__body">
+            <h3>Nayon Telecom eCommerce Platform</h3>
+            <p>Full-featured eCommerce platform with product browsing, authentication, guest checkout and smart
+              product suggestions &mdash; expanded into blog &amp; repair-service platforms on a shared Laravel architecture.</p>
+            <ul class="project-panel__features">
+              <li>User Authentication, Guest Checkout &amp; Order Management</li>
+              <li>Smart Product Recommendation &amp; Product Management</li>
+              <li>Blog &amp; Repair Service Platform Integration</li>
+            </ul>
+            <div class="project-panel__stack">
+              <span>Laravel</span><span>Blade</span><span>PHP</span><span>MySQL</span><span>SSLCommerz</span>
+            </div>
+            <div class="project-panel__links">
+              <a href="https://nayontelecom.com.bd" target="_blank" rel="noopener">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-panel" data-index="1">
+          <div class="project-panel__num">02</div>
+          <div class="project-panel__body">
+            <h3>Alyssis &mdash; Mindfulness &amp; Travel Platform</h3>
+            <p>A productivity and mindfulness REST API helping users manage daily routines, reflective journaling
+              and travel planning in a single application.</p>
+            <ul class="project-panel__features">
+              <li>Daily Task, Routine &amp; Custom Scheduling</li>
+              <li>Mindfulness Journaling &amp; Reflection Tracking</li>
+              <li>Travel Planning, Memory Uploads &amp; Organization</li>
+            </ul>
+            <div class="project-panel__stack">
+              <span>Laravel</span><span>REST API</span><span>MySQL</span><span>Firebase</span><span>Flutter APIs</span>
+            </div>
+            <div class="project-panel__links">
+              <a href="#" target="_blank" rel="noopener">GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-panel" data-index="2">
+          <div class="project-panel__num">03</div>
+          <div class="project-panel__body">
+            <h3>SUNFIX Beach Service Platform</h3>
+            <p>Multi-platform beach service system with customer mobile apps and web panels for providers,
+              owners and admins &mdash; booking, ordering and real-time notifications.</p>
+            <ul class="project-panel__features">
+              <li>Beach Chair Booking, Food Ordering &amp; Service Management</li>
+              <li>Provider, Owner &amp; Admin Dashboards with Real-Time Alerts</li>
+              <li>Weather Insights &amp; Multi-Platform REST API Architecture</li>
+            </ul>
+            <div class="project-panel__stack">
+              <span>Laravel</span><span>Docker</span><span>Stripe</span><span>Firebase</span><span>Google Cloud</span>
+            </div>
+            <div class="project-panel__links">
+              <a href="#" target="_blank" rel="noopener">Live Demo <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-panel" data-index="3">
+          <div class="project-panel__num">04</div>
+          <div class="project-panel__body">
+            <h3>Insaf Diagnostic &amp; Consultation Centre</h3>
+            <p>A diagnostic center management platform with doctor management, patient appointment booking,
+              scheduling and medical service management.</p>
+            <ul class="project-panel__features">
+              <li>Doctor Management &amp; Appointment Booking</li>
+              <li>Patient Records, Scheduling &amp; Slot Management</li>
+              <li>Medical Services &amp; Consultation Workflow</li>
+            </ul>
+            <div class="project-panel__stack">
+              <span>Laravel</span><span>Blade</span><span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+            </div>
+            <div class="project-panel__links">
+              <a href="https://insafdacc-bd.com/" target="_blank" rel="noopener">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-panel" data-index="4">
+          <div class="project-panel__num">05</div>
+          <div class="project-panel__body">
+            <h3>The Booking Nest</h3>
+            <p>Multi-platform service booking system with mobile and web apps for customers and providers &mdash;
+              booking, custom requests, real-time chat and payments.</p>
+            <ul class="project-panel__features">
+              <li>Service Booking, Slot Scheduling &amp; Multi-Role Management</li>
+              <li>Real-Time Chat, Custom Requests &amp; Push Notifications</li>
+              <li>Stripe Payments &amp; Social Authentication</li>
+            </ul>
+            <div class="project-panel__stack">
+              <span>Laravel</span><span>Reverb</span><span>Stripe</span><span>Firebase</span><span>REST API</span>
+            </div>
+            <div class="project-panel__links">
+              <a href="#" target="_blank" rel="noopener">GitHub Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-panel" data-index="5">
+          <div class="project-panel__num">06</div>
+          <div class="project-panel__body">
+            <h3>ImageWorld Service Platform</h3>
+            <p>A service-based platform connecting users with graphic designers for custom image editing,
+              optimized for SEO, mobile responsiveness and performance.</p>
+            <ul class="project-panel__features">
+              <li>User Registration, Free Trial &amp; Service Workflow</li>
+              <li>SEO Optimization &amp; Structured Data</li>
+              <li>Mobile Responsiveness &amp; Analytics Integration</li>
+            </ul>
+            <div class="project-panel__stack">
+              <span>Laravel</span><span>Blade</span><span>PHP</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+            <div class="project-panel__links">
+              <a href="https://imageworld24.com/" target="_blank" rel="noopener">Live Site <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="skills section">
+  <div class="container">
+    <p class="section-eyebrow reveal center">What I Know</p>
+    <h2 class="section-title reveal center">Skills</h2>
+
+    <div class="skills__grid">
+
+      <div class="skills__col reveal">
+        <h3 class="skills__col-title"><i class="fa-solid fa-code"></i> Technical Skills</h3>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>PHP &amp; Laravel</span><span>95%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="95"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>REST API Development</span><span>90%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>MySQL</span><span>85%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>JavaScript / jQuery</span><span>75%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>Vue.js</span><span>70%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="70"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>HTML5, CSS3 &amp; Bootstrap5</span><span>90%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
+        </div>
+
+        <div class="tech-icons">
+          <i class="devicon-php-plain colored" title="PHP"></i>
+          <i class="devicon-laravel-plain colored" title="Laravel"></i>
+          <i class="devicon-mysql-plain colored" title="MySQL"></i>
+          <i class="devicon-javascript-plain colored" title="JavaScript"></i>
+          <i class="devicon-jquery-plain colored" title="jQuery"></i>
+          <i class="devicon-vuejs-plain colored" title="Vue.js"></i>
+          <i class="devicon-html5-plain colored" title="HTML5"></i>
+          <i class="devicon-css3-plain colored" title="CSS3"></i>
+          <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+          <i class="devicon-git-plain colored" title="Git"></i>
+          <i class="devicon-docker-plain colored" title="Docker"></i>
+          <i class="devicon-firebase-plain colored" title="Firebase"></i>
+        </div>
+      </div>
+
+      <div class="skills__col reveal" data-delay="1">
+        <h3 class="skills__col-title"><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+        <div class="tags">
+          <span class="tag">Team Leading</span>
+          <span class="tag">Project Management</span>
+          <span class="tag">Foreign Client Management</span>
+          <span class="tag">Communication</span>
+          <span class="tag">Problem Solving</span>
+          <span class="tag">Ownership</span>
+        </div>
+
+        <h3 class="skills__col-title skills__col-title--spaced"><i class="fa-solid fa-language"></i> Languages</h3>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>Bangla (Native)</span><span>100%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="100"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar__top"><span>English (Professional)</span><span>85%</span></div>
+          <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+        </div>
+
+        <div class="achievement-card">
+          <i class="fa-solid fa-trophy"></i>
+          <div>
+            <h4>Best Performer &mdash; Internship Program 2022</h4>
+            <p>Awarded by Creative IT Institute for outstanding performance in the Web &amp; Software Department.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE & EDUCATION ============ -->
+<section id="experience" class="experience section">
+  <div class="container">
+    <p class="section-eyebrow reveal center">My Journey</p>
+    <h2 class="section-title reveal center">Experience &amp; Education</h2>
+
+    <div class="timeline-grid">
+
+      <div class="timeline-col">
+        <h3 class="timeline-col__title reveal"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <span class="timeline__date">Jan 2025 &ndash; Present</span>
+            <h4>Laravel Developer</h4>
+            <p class="timeline__place">Softvence Agency</p>
+            <p>Building scalable APIs and web-based control panels, collaborating with Flutter &amp; React
+              teams while leading a 20+ member capsule team.</p>
+          </div>
+          <div class="timeline__item reveal" data-delay="1">
+            <div class="timeline__dot"></div>
+            <span class="timeline__date">Jan 2024 &ndash; Jan 2025</span>
+            <h4>Website Developer</h4>
+            <p class="timeline__place">LinkTechBD</p>
+            <p>Built dynamic web apps &mdash; eCommerce, portfolios, hospital systems &amp; landing pages.
+              Delivered 10+ projects, including a POS system with Vue 2 &amp; PHP.</p>
+          </div>
+          <div class="timeline__item reveal" data-delay="2">
+            <div class="timeline__dot"></div>
+            <span class="timeline__date">Feb 2022 &ndash; Aug 2023</span>
+            <h4>Training &amp; Internship</h4>
+            <p class="timeline__place">Creative IT Institute</p>
+            <p>1.5 years of training in HTML, CSS, Bootstrap &amp; Laravel, plus a 6-month internship
+              delivering 7+ real-world projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-col">
+        <h3 class="timeline-col__title reveal"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+        <div class="timeline">
+          <div class="timeline__item reveal">
+            <div class="timeline__dot"></div>
+            <span class="timeline__date">2023 &ndash; Present</span>
+            <h4>B.Sc in Computer Science &amp; Engineering</h4>
+            <p class="timeline__place">Sonargaon University</p>
+          </div>
+          <div class="timeline__item reveal" data-delay="1">
+            <div class="timeline__dot"></div>
+            <span class="timeline__date">2019 &ndash; 2023</span>
+            <h4>Diploma in Civil Engineering</h4>
+            <p class="timeline__place">Dhaka Polytechnic</p>
+          </div>
+          <div class="timeline__item reveal" data-delay="2">
+            <div class="timeline__dot"></div>
+            <span class="timeline__date">2018 &ndash; 2019</span>
+            <h4>Secondary School Certificate (Science)</h4>
+            <p class="timeline__place">Government Science School</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact section">
+  <div class="container">
+    <p class="section-eyebrow reveal center">Get In Touch</p>
+    <h2 class="section-title reveal center">Contact Me</h2>
+    <p class="contact__lead reveal center">
+      Have a project in mind or just want to say hi? Reach me directly on any of these:
+    </p>
+
+    <div class="contact__grid">
+      <a href="https://wa.me/8801747732360" target="_blank" rel="noopener" class="contact-card reveal" data-delay="0">
+        <i class="fa-brands fa-whatsapp"></i>
+        <h4>WhatsApp</h4>
+        <p>+880 1747 732360</p>
+      </a>
+      <a href="https://www.linkedin.com/in/mahi-alam9" target="_blank" rel="noopener" class="contact-card reveal" data-delay="1">
+        <i class="fa-brands fa-linkedin"></i>
+        <h4>LinkedIn</h4>
+        <p>mahi-alam9</p>
+      </a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener" class="contact-card reveal" data-delay="2">
+        <!-- TODO: replace with your actual Twitter/X handle URL -->
+        <i class="fa-brands fa-x-twitter"></i>
+        <h4>Twitter</h4>
+        <p>@your-handle</p>
+      </a>
+      <a href="mailto:manjurulalammahi@gmail.com" class="contact-card reveal" data-delay="3">
+        <i class="fa-solid fa-envelope"></i>
+        <h4>Email</h4>
+        <p>manjurulalammahi@gmail.com</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>&copy; <span id="year"></span> Manjurul Alam Mahi. All rights reserved.</p>
+    <p class="footer__made">Built with HTML, CSS &amp; JavaScript.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

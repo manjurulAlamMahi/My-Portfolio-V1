@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#30382B"/>
+      <stop offset="100%" stop-color="#586052"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg)"/>
+  <text x="50%" y="46%" text-anchor="middle" dominant-baseline="middle"
+        font-family="'JetBrains Mono', monospace" font-size="150" font-weight="700"
+        fill="#D9DFC6">MA</text>
+  <text x="50%" y="66%" text-anchor="middle" dominant-baseline="middle"
+        font-family="'JetBrains Mono', monospace" font-size="28" font-weight="500"
+        fill="#D9DFC6" opacity="0.85">&lt;/mahi&gt;</text>
+</svg>
