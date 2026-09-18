@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
      ============================================================ */
   const navbar = document.getElementById('navbar');
   const navToggle = document.getElementById('navToggle');
-  const navMenu = document.getElementById('navMenu');
 
   const onScrollNav = () => {
     navbar.classList.toggle('scrolled', window.scrollY > 60);
@@ -22,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navbar.classList.toggle('nav-open');
     navToggle.classList.toggle('open');
   });
-  navMenu.querySelectorAll('.nav-link').forEach(link => {
+  document.getElementById('navMenuWrap').querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navbar.classList.remove('nav-open');
       navToggle.classList.remove('open');
@@ -252,36 +251,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.4 });
   skillFills.forEach(f => skillObserver.observe(f));
-
-  /* ============================================================
-     PROJECTS — pinned scroll storytelling
-     ============================================================ */
-  const projectsScroll = document.getElementById('projectsScroll');
-  const panels = document.querySelectorAll('.project-panel');
-  const dots = document.querySelectorAll('.projects__progress .dot');
-  const totalPanels = panels.length;
-
-  function updateProjectPanels() {
-    const rect = projectsScroll.getBoundingClientRect();
-    const scrollableHeight = rect.height - window.innerHeight;
-    if (scrollableHeight <= 0) return;
-
-    const progress = Math.min(1, Math.max(0, -rect.top / scrollableHeight));
-    let index = Math.floor(progress * totalPanels);
-    if (index >= totalPanels) index = totalPanels - 1;
-    if (index < 0) index = 0;
-
-    panels.forEach((p, i) => p.classList.toggle('active', i === index));
-    dots.forEach((d, i) => d.classList.toggle('active', i === index));
-  }
-
-  let projTicking = false;
-  window.addEventListener('scroll', () => {
-    if (!projTicking) {
-      requestAnimationFrame(() => { updateProjectPanels(); projTicking = false; });
-      projTicking = true;
-    }
-  }, { passive: true });
-  updateProjectPanels();
 
 });

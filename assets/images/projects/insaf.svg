@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <rect width="800" height="500" fill="#FBFBFB"/>
+  <rect x="0.5" y="0.5" width="799" height="499" fill="none" stroke="#DCE0D5" stroke-width="1"/>
+  <g transform="translate(400,215)">
+    <rect x="-46" y="-34" width="92" height="60" rx="6" fill="none" stroke="#C9D1B2" stroke-width="3"/>
+    <rect x="-46" y="-34" width="92" height="44" rx="4" fill="#D9DFC6" opacity="0.5"/>
+    <line x1="-14" y1="26" x2="14" y2="26" stroke="#C9D1B2" stroke-width="3"/>
+    <line x1="0" y1="26" x2="0" y2="34" stroke="#C9D1B2" stroke-width="3"/>
+  </g>
+  <text x="400" y="300" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="24" font-weight="700" fill="#30382B">Insaf Diagnostic</text>
+  <text x="400" y="328" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="13" fill="#7A8174">Desktop screenshot coming soon</text>
+</svg>
