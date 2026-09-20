@@ -216,6 +216,13 @@ document.addEventListener('DOMContentLoaded', () => {
   setInterval(rotateBadge, 2600);
 
   /* ============================================================
+     SERVICE CARDS — tap-to-flip (hover already flips on desktop)
+     ============================================================ */
+  document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', () => card.classList.toggle('flipped'));
+  });
+
+  /* ============================================================
      STAT COUNTERS
      ============================================================ */
   const counters = document.querySelectorAll('.stat__num');

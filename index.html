@@ -45,16 +45,15 @@
           <a href="#skills" class="nav-link" data-link>Skills</a>
           <a href="#contact" class="nav-link" data-link>Contact</a>
         </nav>
-
-        <div class="navbar__actions">
-          <!-- Replace with the real path to your CV once you upload it -->
-          <a href="assets/cv/Manjurul-Alam-Mahi-CV.pdf" download class="btn btn--sm btn--outline-nav">Download CV</a>
-        </div>
       </div>
 
-      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="navbar__right">
+        <!-- Replace with the real path to your CV once you upload it -->
+        <a href="assets/cv/Manjurul-Alam-Mahi-CV.pdf" download class="btn btn--sm btn--outline-nav">Download CV</a>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -87,7 +86,6 @@
       <div class="about__media reveal">
         <div class="about__avatar-wrap">
           <div class="about__blob"></div>
-          <div class="about__avatar-ring"></div>
           <img src="assets/images/avatar-placeholder.svg" alt="Manjurul Alam Mahi" class="about__avatar" id="avatarImg">
           <!-- Replace assets/images/avatar-placeholder.svg with your real photo (e.g. assets/images/avatar.jpg) -->
           <div class="about__badge" id="techBadge">
@@ -95,21 +93,6 @@
             <span>Laravel</span>
           </div>
         </div>
-      </div>
-
-      <div class="about__content">
-        <p class="section-eyebrow reveal">Get To Know Me</p>
-        <h2 class="section-title reveal">About Me</h2>
-        <p class="about__text reveal" data-delay="1">
-          Laravel Developer with 3+ years of experience building scalable web applications and RESTful APIs.
-          Skilled in PHP and Vue 2, with hands-on experience in POS systems. Proven team leader with experience
-          managing development teams and delivering reliable, high-performance solutions.
-        </p>
-        <p class="about__text reveal" data-delay="2">
-          Currently building scalable APIs and web-based control panels for mobile and web applications at
-          <strong>Softvence Agency</strong>, collaborating with Flutter and React teams while leading a
-          20+ member capsule team across UI/UX, frontend, backend, and mobile development.
-        </p>
 
         <div class="about__stats reveal" data-delay="3">
           <div class="stat">
@@ -128,6 +111,21 @@
             <span class="stat__label">Clients Managed</span>
           </div>
         </div>
+      </div>
+
+      <div class="about__content">
+        <p class="section-eyebrow reveal">Get To Know Me</p>
+        <h2 class="section-title reveal">About Me</h2>
+        <p class="about__text reveal" data-delay="1">
+          Laravel Developer with 3+ years of experience building scalable web applications and RESTful APIs.
+          Skilled in PHP and Vue 2, with hands-on experience in POS systems. Proven team leader with experience
+          managing development teams and delivering reliable, high-performance solutions.
+        </p>
+        <p class="about__text reveal" data-delay="2">
+          Currently building scalable APIs and web-based control panels for mobile and web applications at
+          <strong>Softvence Agency</strong>, collaborating with Flutter and React teams while leading a
+          20+ member capsule team across UI/UX, frontend, backend, and mobile development.
+        </p>
 
         <a href="#contact" class="btn btn--primary reveal" data-delay="4">Let's Talk</a>
       </div>
@@ -137,42 +135,152 @@
 
   <!-- ============ SERVICES ============ -->
   <section id="services" class="services section">
+    <div class="services__bubbles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
     <div class="container">
       <p class="section-eyebrow reveal center">What I Offer</p>
       <h2 class="section-title reveal center">Services</h2>
+      <p class="services__lead reveal center">Hover or tap a card to see what's included.</p>
 
       <div class="services__grid">
         <div class="service-card reveal" data-delay="0">
-          <div class="service-card__icon"><i class="fa-solid fa-server"></i></div>
-          <h3>Backend API Development</h3>
-          <p>Building secure, scalable RESTful APIs in Laravel &amp; PHP that power web and mobile applications.</p>
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-display"></i></div>
+              <h3>Web Application</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>Web Application</h3>
+              <p>Full-stack Laravel web apps and admin dashboards, built for performance and easy scaling.</p>
+            </div>
+          </div>
         </div>
+
         <div class="service-card reveal" data-delay="1">
-          <div class="service-card__icon"><i class="fa-solid fa-cart-shopping"></i></div>
-          <h3>eCommerce &amp; POS Systems</h3>
-          <p>End-to-end eCommerce platforms and Point of Sale systems built with Laravel and Vue 2.</p>
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-cart-shopping"></i></div>
+              <h3>E-Commerce Website</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>E-Commerce Website</h3>
+              <p>End-to-end online stores with payments, inventory and guest checkout, powered by Laravel.</p>
+            </div>
+          </div>
         </div>
+
         <div class="service-card reveal" data-delay="2">
-          <div class="service-card__icon"><i class="fa-solid fa-window-restore"></i></div>
-          <h3>Web Application Development</h3>
-          <p>Full-stack Laravel Blade web apps, admin panels and control-panel dashboards.</p>
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3>Mobile Application</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>Mobile Application</h3>
+              <p>Backend APIs and integrations for Flutter &amp; native apps, built alongside mobile teams.</p>
+            </div>
+          </div>
         </div>
+
         <div class="service-card reveal" data-delay="3">
-          <div class="service-card__icon"><i class="fa-solid fa-database"></i></div>
-          <h3>Database Design</h3>
-          <p>Efficient MySQL schema design, query optimization and performance tuning.</p>
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-file-export"></i></div>
+              <h3>Doc / CV to Website</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>Doc / CV to Website</h3>
+              <p>Turn any CV, resume or document into a polished, interactive website &mdash; no server or hosting needed.</p>
+            </div>
+          </div>
         </div>
+
         <div class="service-card reveal" data-delay="4">
-          <div class="service-card__icon"><i class="fa-solid fa-plug"></i></div>
-          <h3>Third-Party Integrations</h3>
-          <p>Stripe, Firebase, SSLCommerz, Google/Apple Auth and real-time notifications.</p>
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-plug"></i></div>
+              <h3>REST APIs</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>REST APIs</h3>
+              <p>Secure, well-documented APIs that power web, mobile and third-party integrations.</p>
+            </div>
+          </div>
         </div>
+
         <div class="service-card reveal" data-delay="5">
-          <div class="service-card__icon"><i class="fa-solid fa-users-gear"></i></div>
-          <h3>Team Leading &amp; PM</h3>
-          <p>Leading development teams, client communication and end-to-end project delivery.</p>
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-brands fa-wordpress"></i></div>
+              <h3>WordPress Sites</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>WordPress Sites</h3>
+              <p>Custom WordPress builds, theme &amp; plugin customization for fast-turnaround business sites.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card reveal" data-delay="0">
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-sitemap"></i></div>
+              <h3>ERP System</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>ERP System</h3>
+              <p>Custom ERP modules for inventory, operations and reporting, tailored to how your business runs.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card reveal" data-delay="1">
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-cash-register"></i></div>
+              <h3>POS Software</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>POS Software</h3>
+              <p>Point-of-sale systems with real-time inventory, billing and reporting, shipped to production.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card reveal" data-delay="2">
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-address-book"></i></div>
+              <h3>CRM System</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>CRM System</h3>
+              <p>Customer &amp; lead management systems that keep sales and support teams organized.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card reveal" data-delay="3">
+          <div class="service-card__inner">
+            <div class="service-card__front">
+              <div class="service-card__icon"><i class="fa-solid fa-pen-ruler"></i></div>
+              <h3>UI/UX Design</h3>
+            </div>
+            <div class="service-card__back">
+              <h3>UI/UX Design</h3>
+              <p>Clean, usable interface design &mdash; from wireframes to polish, with a dedicated design partner.</p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <p class="services__note reveal center" data-delay="2">
+        <i class="fa-solid fa-circle-info"></i>
+        Some of these fall outside my core role as a Laravel developer, but I work with a trusted, dedicated team
+        to deliver them end-to-end.
+      </p>
     </div>
   </section>
 
@@ -467,24 +575,25 @@
       </p>
 
       <div class="contact__grid">
-        <a href="https://wa.me/8801747732360" target="_blank" rel="noopener" class="contact-card reveal" data-delay="0">
+        <a href="https://wa.me/8801747732360" target="_blank" rel="noopener"
+          class="contact-card contact-card--whatsapp reveal" data-delay="0">
           <i class="fa-brands fa-whatsapp"></i>
           <h4>WhatsApp</h4>
           <p>+880 1747 732360</p>
         </a>
-        <a href="https://www.linkedin.com/in/mahi-alam9" target="_blank" rel="noopener" class="contact-card reveal"
-          data-delay="1">
+        <a href="https://www.linkedin.com/in/mahi-alam9" target="_blank" rel="noopener"
+          class="contact-card contact-card--linkedin reveal" data-delay="1">
           <i class="fa-brands fa-linkedin"></i>
           <h4>LinkedIn</h4>
           <p>mahi-alam9</p>
         </a>
-        <a href="https://twitter.com/" target="_blank" rel="noopener" class="contact-card reveal" data-delay="2">
-          <!-- TODO: replace with your actual Twitter/X handle URL -->
-          <i class="fa-brands fa-x-twitter"></i>
-          <h4>Twitter</h4>
-          <p>@your-handle</p>
+        <a href="https://t.me/manjurulalammahi" target="_blank" rel="noopener"
+          class="contact-card contact-card--telegram reveal" data-delay="2">
+          <i class="fa-brands fa-telegram"></i>
+          <h4>Telegram</h4>
+          <p>@manjurulalammahi</p>
         </a>
-        <a href="mailto:manjurulalammahi@gmail.com" class="contact-card reveal" data-delay="3">
+        <a href="mailto:manjurulalammahi@gmail.com" class="contact-card contact-card--gmail reveal" data-delay="3">
           <i class="fa-solid fa-envelope"></i>
           <h4>Email</h4>
           <p>manjurulalammahi@gmail.com</p>
