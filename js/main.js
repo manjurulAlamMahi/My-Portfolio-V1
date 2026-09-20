@@ -245,18 +245,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
   counters.forEach(c => counterObserver.observe(c));
 
-  /* ============================================================
-     SKILL BARS — animate width on reveal
-     ============================================================ */
-  const skillFills = document.querySelectorAll('.skill-bar__fill');
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.style.width = entry.target.getAttribute('data-width') + '%';
-        skillObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.4 });
-  skillFills.forEach(f => skillObserver.observe(f));
-
 });
